@@ -23,8 +23,8 @@ export class AppComponent {
    this.arr=[];
   }
   removeClicked(rollnumber:any){
-     this.arr.findIndex(x=>x.rollnumber==rollnumber);
-      this.arr.splice(index, 1);
+    let index = this.arr.findIndex(x=>x.rollnumber==rollnumber);
+     this.arr.splice(index, 1);
   }
 
   submitUser(userFrm:any){
